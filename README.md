@@ -3,6 +3,7 @@
   
   <div>
     <h3>"Pure" React vs SSR </h3>
+    <img src="/github/ssr.png"  />
   </div>
   
 <div>
