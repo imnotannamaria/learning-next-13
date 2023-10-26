@@ -13,13 +13,7 @@
     <p>Server compontent = Static components refer to elements that do not involve user interaction.</p>
     <p>Client compontent = JS needs to be sent to the browser/client.</p>
     <p>
-      Hydration = Processo de reativar a funcionalidade 
-      de um aplicativo React que foi pré-renderizado no servidor. 
-      A hidratação é um passo crítico para garantir que a interatividade e funcionalidade 
-      do lado do cliente estejam prontas assim que a página for carregada. 
-      Em termos mais simples, a hidratação é o processo de conectar os componentes React 
-      renderizados no servidor a componentes interativos no navegador. Isso permite uma transição 
-      suave entre a renderização inicial no servidor e a interação do lado do cliente. 
+      Hydration = Refers to the process of reactivating the functionality of a React application that has been pre-rendered on the server. Hydration is a critical step to ensure that client-side interactivity and functionality are ready as soon as the page loads. Put simply, hydration is the process of connecting the React components rendered on the server to interactive components in the browser. This enables a smooth transition between the initial server-side rendering and client-side interaction. The ability to efficiently hydrate the application is crucial to ensuring a responsive and dynamic user experience.
     </p>
   </div>
 <div>
