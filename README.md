@@ -3,7 +3,9 @@
   
   <div>
     <h3>"Pure" React vs SSR </h3>
-    <img src=".github/ssr.png"  />
+    <p align="center">
+      <img alt="Todo" src=".github/ssr.png" width="100%">
+    </p>
   </div>
   
 <div>
