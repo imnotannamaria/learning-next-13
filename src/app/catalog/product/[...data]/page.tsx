@@ -1,3 +1,5 @@
+'use client'
+
 interface ProductProps {
   params: {
     data: string[]
@@ -11,11 +13,18 @@ export default function Product({ params }: ProductProps) {
   // Product ID: 40028922
   // Size: small
   // Color: purple
+
+  function addCart() {
+    alert('Adicionei!')
+  }
+
   return (
     <div>
       <p>Product ID: {productId}</p>
       <p>Size: {size}</p>
       <p>Color: {color}</p>
+
+      <button onClick={addCart}>Adicionar ao carrinho</button>
     </div>
   )
 }
