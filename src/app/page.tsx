@@ -1,8 +1,26 @@
-export default async function Home() {
-  await new Promise((resolve) => setTimeout(resolve, 2000))
+import { GithubProfile } from '@/components/github-profile'
+import { LongWaitComponent } from '@/components/long-wait-component'
+import { Suspense } from 'react'
 
-  const response = await fetch('https://api.github.com/users/imnotannamaria')
-  const user = await response.json()
+export default function Home() {
+  return (
+    <div>
+      <h1>Home</h1>
 
-  return <pre>{JSON.stringify(user, null, 2)}</pre>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia expedita
+        cumque corrupti facilis ut hic exercitationem. Asperiores aliquam ut ex,
+        reiciendis in nemo quam aspernatur ducimus vero necessitatibus cumque
+        totam!
+      </p>
+
+      <Suspense fallback={<p>Ta carreango o LongWaitComponent</p>}>
+        <LongWaitComponent />
+      </Suspense>
+
+      <Suspense fallback={<p>Ta carreango o GithubProfile</p>}>
+        <GithubProfile />
+      </Suspense>
+    </div>
+  )
 }
