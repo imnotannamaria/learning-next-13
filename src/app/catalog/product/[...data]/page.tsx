@@ -1,4 +1,5 @@
 import { AddToCardButton } from './add-to-card-button'
+import { Thread } from './thread'
 
 interface ProductProps {
   params: {
@@ -20,7 +21,9 @@ export default function Product({ params }: ProductProps) {
       <p>Size: {size}</p>
       <p>Color: {color}</p>
 
-      <AddToCardButton />
+      <AddToCardButton>
+        <Thread />
+      </AddToCardButton>
     </div>
   )
 }

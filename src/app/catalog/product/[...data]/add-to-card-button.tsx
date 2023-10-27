@@ -1,9 +1,8 @@
 'use client'
 
-import { useState } from 'react'
-import { Thread } from './thread'
+import { ReactNode, useState } from 'react'
 
-export function AddToCardButton() {
+export function AddToCardButton({ children }: { children: ReactNode }) {
   const [count, setCount] = useState(0)
 
   function addToCard() {
@@ -12,8 +11,7 @@ export function AddToCardButton() {
 
   return (
     <button onClick={addToCard}>
-      Adicionar ao carrinho ({count})
-      <Thread />
+      Adicionar ao carrinho ({count}){children}
     </button>
   )
 }
